@@ -1,5 +1,6 @@
 import React from "react";
 import StationItem from "./StationItem";
+import Link from "next/link";
 
 const StationDetail = ({ station }) => {
   return (
