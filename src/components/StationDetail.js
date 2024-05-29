@@ -6,7 +6,7 @@ const StationDetail = ({ station }) => {
   return (
     <div>
       <StationItem station={station} />
-      <Link href="/">
+      <Link legacyBehavior href="/">
         <a>Back to list</a>
       </Link>
     </div>
