@@ -132,6 +132,46 @@
   background-color: var(--accent);
 }
 
+/* Station - Detail*/
+
+.stationName {
+  text-align: center;
+  margin: 2rem 2rem 2rem 2rem;
+  font-size: 2rem;
+  font-family: "Georama";
+  color: var(--green);
+}
+
+.border {
+  background-color: var(--white);
+  border-radius: 15px;
+  border: 2px solid var(--green);
+  padding: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  box-sizing: border-box;
+  line-height: 2rem;
+  font-family: "Poppins";
+  margin-bottom: 2rem;
+}
+
+.border p:first-child {
+  font-weight: bold;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.back {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  text-align: left;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-left: 1rem;
+  font-family: "Poppins";
+}
+
 /* radar */
 .center {
   display: flex;
