@@ -44,6 +44,13 @@
   color: var(--green);
 }
 
+.stationListH1 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: "Georama";
+  color: var(--green);
+}
+
 .h2 {
   font-family: "Poppins";
   font-weight: lighter;
@@ -66,6 +73,35 @@
   font-family: "Poppins";
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.stationList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stationItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.stationLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  text-align: left;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 75%;
 }
 
 @media (max-width: 600px) {
