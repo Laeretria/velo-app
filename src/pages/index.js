@@ -7,8 +7,8 @@ const Homepage = () => {
   return (
     <>
       <Head>
-        <title>Velo App By Vi Krumklang</title>
-        <meta name="description" content="Welcome to Velo Antwerpen" />
+        <title>Bike & Co By Vi Krumklang</title>
+        <meta name="description" content="Welcome to Bike & Co Antwerp" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
