@@ -159,7 +159,7 @@
   font-weight: bold;
   color: var(--accent);
   font-size: 1.2rem;
-  max-width: fit-content;
+  word-wrap: break-word;
 }
 
 .border p:nth-child(2) {
