@@ -4,6 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Georama:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <body>
         <Main />
         <NextScript />
