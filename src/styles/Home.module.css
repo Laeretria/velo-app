@@ -1,3 +1,5 @@
+/* Startscreen */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -44,18 +46,6 @@
   color: var(--green);
 }
 
-.stationListH1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-family: "Georama";
-  color: var(--green);
-}
-
 .h2 {
   font-family: "Poppins";
   font-weight: lighter;
@@ -78,6 +68,20 @@
   font-family: "Poppins";
   font-weight: 300px;
   margin-bottom: 1rem;
+}
+
+/* StationList - Home */
+
+.stationListH1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Georama";
+  color: var(--green);
 }
 
 .stationList {
@@ -126,6 +130,85 @@
 
 .highlighted .stationLink {
   background-color: var(--accent);
+}
+
+/* radar */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18rem;
+  margin-bottom: -16.8rem;
+}
+.spinner {
+  width: 70vw;
+  height: 70vw;
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  border: 1px solid #11c400;
+  border-radius: 50%;
+  transition: 200ms all;
+}
+
+.spinner::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-image: conic-gradient(var(--green) 70%, var(--darkgreen));
+  animation: spin 3s infinite linear;
+}
+.dot {
+  width: 2.5vw;
+  height: 2.5vw;
+  max-width: 10px;
+  max-height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 12.5vw;
+  opacity: 0;
+  background-color: var(--accent);
+  animation: bip 3s infinite linear;
+  animation-delay: 2.2s;
+}
+.arc {
+  display: inline-block;
+  border: 1px solid rgba(6, 73, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.arc:nth-child(2) {
+  width: 20%;
+  height: 20%;
+}
+.arc:nth-child(3) {
+  width: 40%;
+  height: 40%;
+}
+.arc:nth-child(4) {
+  width: 60%;
+  height: 60%;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bip {
+  0% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 600px) {

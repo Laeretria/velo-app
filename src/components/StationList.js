@@ -32,6 +32,15 @@ const StationList = ({ stations }) => {
           className={styles.searchInput}
         />
       </div>
+      <div className={styles.center}>
+        <div className={styles.spinner}>
+          <span className={styles.dot}></span>
+          <span className={styles.arc}></span>
+          <span className={styles.arc}></span>
+          <span className={styles.arc}></span>
+        </div>
+      </div>
+
       <ul className={styles.stationList}>
         {stations.map((station) => (
           <li
