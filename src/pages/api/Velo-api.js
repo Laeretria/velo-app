@@ -1,4 +1,4 @@
-const API_URL = "http://api.citybik.es/v2/networks/velo-antwerpen";
+const API_URL = "https://api.citybik.es/v2/networks/velo-antwerpen";
 
 export const fetchStations = async () => {
   const response = await fetch(API_URL);
